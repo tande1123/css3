@@ -1,0 +1,142 @@
+#one_kit,#auto_propmt,#gps_box,footer{
+	border:1px solid #000;
+}
+header,#footer,#main,#title,#one_kit,#gps_box{
+	width:100%;
+	margin:0px auto;
+}
+#propmt,#auto_propmt,#foot_nav{
+	width:1020px;
+	margin:0px auto;
+}
+body{
+	font-size:12px;
+	color:#999;
+	padding:0px;
+	margin:0px;
+	font-family:"microsoft yahei";
+}
+ul,li,ol,p,h1,h2,h3,h4,h5,h6,a{
+	padding:0px;
+	margin:0px;
+	list-style:none;
+	text-decoration:none;
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+.content_box{
+	width:1020px;
+	margin:0px auto;
+}
+/*智能提醒*/
+#foot_nav{
+	height:300px;
+	padding:90px 0px;
+}
+#foot_nav>ul>li{
+	float:left;
+	width:340px;
+	height:150px;
+}
+#foot_nav>ul>li>a{
+	float:left;
+	width:80px;
+	height:80px;
+	background:url(iconlist_3.png) no-repeat 0px 0px;
+}
+#foot_nav>ul>li>h4>a{
+	color:#FEE980;
+	font-size:14px;
+	display:block;
+	margin:15px 0px 0px 90px;
+}
+#foot_nav>ul>li>p{
+	
+	margin:10px 0px 0px 90px;
+}
+#foot_nav>ul>.tixing>a{
+	background-position:-85px 0px;
+}
+#foot_nav>ul>.tixing>h4>a{
+	color:#F1686D;
+}
+#foot_nav>ul>.dinwei>a{
+	background-position:-170px 0px;
+}
+#foot_nav>ul>.dinwei>h4>a{
+	color:#3DD1F6;
+}
+#foot_nav>ul>.shuang>a{
+	background-position:0px -85px;
+}
+#foot_nav>ul>.shuang>h4>a{
+	color:#88D759;
+}
+#foot_nav>ul>.chaodi>a{
+	background-position:-85px -85px;
+}
+#foot_nav>ul>.chaodi>h4>a{
+	color:#FE9552;
+}
+#foot_nav>ul>li:last-child>a{
+	background-position:-170px -85px;
+}
+#foot_nav>ul>li:last-child>h4>a{
+	color:#B099FA;
+}
+#footer>#guanzhu{
+	width:1020px;
+	height:200px;
+	margin:0px auto;
+	padding:20px 90px;
+}
+#footer{
+	background-color:#383838;
+}
+#footer>#guanzhu>ul{
+	float:left;
+	width:200px;
+	height:150px;
+}
+#footer>#guanzhu .guan>a{
+	font-size:18px;
+}
+#footer>#guanzhu li{
+	margin:10px;
+}
+#footer>#guanzhu a{
+	color:#959595;
+}
+#footer>#guanzhu>ol{
+	float:left;
+	width:150px;
+	height:150px;
+}
+#footer>#guanzhu>.weibo{
+	float:left;
+	width:237px;
+	height:150px;
+	margin-top:10px;
+}
+#footer>#guanzhu b{
+	float:left;
+	width:112px;
+	height:114px;
+	background:url(iconlist_2.png) no-repeat 0px -590px;
+}
+#footer>#guanzhu p{
+	margin:40px 20px 10px 130px;
+}
+#footer>#guanzhu>.weixin>b{
+	background-position:-214px -590px;
+}
+#footer>#guanzhu>.weixin{
+	float:left;
+	width:237px;
+	height:150px;
+	margin-top:10px;
+}
