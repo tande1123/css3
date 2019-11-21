@@ -1,0 +1,81 @@
+/*css3 - 动画
+	前端的语言：html css  JavaScript
+	html - 页面的内容
+	css - 修饰页面的内容
+	JavaScript - 页面的交互效果
+	今天的案例有两个效果：
+	1. 闪烁 opacity 改变元素的透明  取值范围 0-1 
+	   0 - 表示完全透明   1 - 完全不透明
+
+	2. 旋转 - transform
+	   什么是transform
+	   使元素完成2d或者是3d的转换，有了这个属性就允许我们对元素进行旋转，缩放，位移，倾斜
+	   rotate(angle) 比如：rotate(30deg) 
+	   angle取值可以有正负区别
+	   取正值表示按顺时针旋转
+	   取负值表示按逆时针旋转
+	3. 动画：将元素的多个状态放在一起进行运行（多个状态进行的转换）
+	   过渡transition：实现简单的动态效果
+	   动画animation： 实现复杂的动态效果
+	   实现动画的步骤：
+			1. 声明动画
+			   @keyframes  声明时候需要把动画的过程中的状态声明出来
+			   语法：
+			   @keyframes 动画名称{
+					定义关键帧 - 不同时间点上的动画状态
+					from|0%{
+						动画开始状态（样式）
+					}
+					...若干关键帧
+					20%{
+						。。。
+					}
+					50%{
+						....
+					}
+					to|100%{
+						动画结束时候的状态（样式）
+					}
+			   }
+			2. 调用动画
+			通过animation属性 调用已声明的动画
+			animation:动画名称 5s linear 0s;
+			1. animation-name :调用的动画的名称
+			2. animation-duration:动画的执行时长
+			3. animation-timing-function :动画执行的速度效果
+			4. animation-delay:动画的延迟
+	qq：1119786451 
+*/
+@keyframes blink_pic{
+	0%{
+		opacity:1;
+		transform:rotate(0deg);
+	}
+	20%{
+		opacity:0.2;
+		transform:rotate(10deg);
+	}
+	35%{
+		opacity:1;
+		transform:rotate(20deg);
+	}
+	50%{
+		opacity:0.2;
+		transform:rotate(30deg);
+	}
+	65%{
+		transform:rotate(10deg);
+		opacity:1;
+	}
+	70%{
+		opacity:0.2;
+		transform:rotate(0deg);
+	}
+	to{
+		transform:rotate(-20deg);
+		opacity:1;
+	}
+}
+#foot_nav>ul>li>a:hover{
+	animation:blink_pic 0.5s linear 0s;
+}
